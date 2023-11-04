@@ -79,7 +79,7 @@ class ShoesListFragment : Fragment() {
         false
       ) as ItemShoeBinding
       itemShoeBinding.itemShoe = shoe
-      itemShoeBinding.size.text = shoe.size.toString()
+      itemShoeBinding.size.text = shoe.getSize()
       shoesListBinding.shoesListLayout.addView(itemShoeBinding.root)
     }
   }

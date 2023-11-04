@@ -15,16 +15,11 @@ import com.udacity.shoestore.viewmodel.ShoeViewModel
 class ShoeDetailFragment : Fragment() {
 
   private lateinit var shoeDetailBinding: ShoeDetailFragmentBinding
+  private val shoeDataBinding = Shoe("", 0.0, "", "")
   private val shoeViewModel: ShoeViewModel by activityViewModels()
 
   private fun addNewShoe() {
-    val newShoe = Shoe(
-      shoeDetailBinding.nameEdittext.text.toString(),
-      shoeDetailBinding.companyEdittext.text.toString().toDouble(),
-      shoeDetailBinding.sizeEdittext.text.toString(),
-      shoeDetailBinding.descriptionEdittext.text.toString()
-    )
-    shoeViewModel.createShoe(newShoe)
+    shoeViewModel.createShoe(shoeDataBinding)
   }
 
   private fun navigateToShoesList() {
@@ -34,10 +29,10 @@ class ShoeDetailFragment : Fragment() {
 
   private fun setupListeners() {
     shoeDetailBinding.cancelButton.setOnClickListener {
-      addNewShoe()
       navigateToShoesList()
     }
     shoeDetailBinding.saveButton.setOnClickListener {
+      addNewShoe()
       navigateToShoesList()
     }
   }
@@ -50,6 +45,8 @@ class ShoeDetailFragment : Fragment() {
     shoeDetailBinding = DataBindingUtil.inflate(
       inflater, R.layout.shoe_detail_fragment, container, false
     )
+    shoeDetailBinding.shoeDataBinding = shoeDataBinding
+    shoeDetailBinding.lifecycleOwner = this
     setupListeners()
     return shoeDetailBinding.root
   }
