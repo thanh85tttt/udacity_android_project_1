@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructorFragment">
+
+    <TextView
+        android:id="@+id/step_one_textview"
+        style="@style/step_instruction_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_twenty"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="@dimen/margin_twenty"
+        android:text="@string/step_one_instruction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/step_two_textview"
+        style="@style/step_instruction_style"
+        android:layout_width="@dimen/dimen_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_twenty"
+        android:layout_marginTop="@dimen/margin_twenty"
+        android:layout_marginEnd="@dimen/margin_twenty"
+        android:text="@string/click_a_shoe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_one_textview" />
+
+    <TextView
+        android:id="@+id/step_three_textview"
+        style="@style/step_instruction_style"
+        android:layout_width="@dimen/dimen_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_twenty"
+        android:layout_marginTop="@dimen/margin_twenty"
+        android:layout_marginEnd="@dimen/margin_twenty"
+        android:text="@string/add_new_shoe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_two_textview" />
+
+    <Button
+        android:id="@+id/list_show_button"
+        android:layout_width="@dimen/dimen_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_twenty"
+        android:layout_marginTop="@dimen/margin_fifty"
+        android:layout_marginEnd="@dimen/margin_twenty"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/list_shoe"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_three_textview" />
+</androidx.constraintlayout.widget.ConstraintLayout>

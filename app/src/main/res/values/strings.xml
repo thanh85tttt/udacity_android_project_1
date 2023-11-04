@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="shoe_store">Shoe Store</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="enter_password">Enter password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="step_one_instruction">1. Click button go to shoe list</string>
+    <string name="click_a_shoe">2. Click a shoe to view detail page</string>
+    <string name="add_new_shoe">3. Add new shoe by click button add shoe</string>
+    <string name="list_shoe">List shoe</string>
+    <string name="thank_you_to_use_our_service">Thank you to use our service. Please click next to start</string>
+    <string name="welcome_to_shoe_store">Welcome To Shoe Store</string>
+    <string name="next">Next</string>
+    <string name="enter_shoe_name">Enter shoe name</string>
+    <string name="name">Name</string>
+    <string name="company">Company</string>
+    <string name="size">Size</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="cancel">cancel</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="logout">Logout</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WelcomeFragment">
+
+    <ImageView
+        android:id="@+id/welcome_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_thumbnail_height"
+        android:src="@drawable/welcome" />
+
+    <TextView
+        android:id="@+id/welcome_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/welcome_to_shoe_store"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/login_textsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/thankyou_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:text="@string/thank_you_to_use_our_service"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_twenty"
+        android:layout_marginTop="@dimen/margin_twenty"
+        android:layout_marginEnd="@dimen/margin_twenty"
+        android:background="@color/colorPrimary"
+        android:text="@string/next"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
