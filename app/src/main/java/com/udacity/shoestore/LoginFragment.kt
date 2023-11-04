@@ -12,10 +12,6 @@ class LoginFragment : Fragment() {
 
   private lateinit var loginBinding: LoginFragmentBinding
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-  }
-
   override fun onCreateView(
     inflater: LayoutInflater,
     container: ViewGroup?,
